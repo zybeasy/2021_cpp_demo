@@ -4,6 +4,7 @@
 #include <sys/syscall.h>
 
 #include "tree_test.h"
+#include "test.h"
 
 using namespace std;
 
@@ -41,9 +42,5 @@ int main(int, char**) {
     const char* FORMAT = "============";
     cout << FORMAT << " END " << FORMAT << endl;
 
-    cout << typeid(3).name()  << endl;
-    cout << typeid(3).hash_code() << endl;
-
-   void *data = (void*)malloc(0);
-   cout << data << endl;
+    test_quick_sort();
 }

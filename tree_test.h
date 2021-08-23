@@ -1,5 +1,5 @@
-#ifndef CPPDEMO_TEST_H
-#define CPPDEMO_TEST_H
+#ifndef CPPDEMO_TREE_TEST_H
+#define CPPDEMO_TREE_TEST_H
 
 #include "tree/bin_tree.h"
 

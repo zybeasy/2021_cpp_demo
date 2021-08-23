@@ -2,6 +2,7 @@
 #include <iomanip>
 
 #include <queue>
+#include <cstring>
 
 #include "bin_tree.h"
 
