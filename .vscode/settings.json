@@ -5,6 +5,7 @@
         "iosfwd": "cpp",
         "queue": "cpp",
         "ios": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "functional": "cpp"
     }
 }
