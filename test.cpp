@@ -18,4 +18,6 @@ void test_quick_sort() {
     for(int i=0; i<sizeof(data2)/sizeof(int); ++i)
         cout << data2[i] << " ";
     cout << endl;
+
+    cout << "==================" << endl;
 }

@@ -18,10 +18,14 @@ message("SORT_SRC_LIST "${SORT_SRC_LIST})
 file(GLOB MAIN_TEST "test.cpp")
 message("MAIN_TEST "${MAIN_TEST})
 
+file(GLOB TMP "tmp/*.cpp")
+message("TMP "${TMP})
+
 
 add_executable(2021_CPP_DEMO main.cpp 
     ${TREE_SRC_LIST} ${MAIN_TREE_TEST} 
-    ${SORT_SRC_LIST} ${MAIN_TEST})
+    ${SORT_SRC_LIST} ${MAIN_TEST}
+    ${TMP})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

@@ -6,6 +6,12 @@
         "queue": "cpp",
         "ios": "cpp",
         "iomanip": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "iterator": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "vector": "cpp"
     }
 }
