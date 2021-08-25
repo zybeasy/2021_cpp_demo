@@ -9,8 +9,8 @@ message(${CMAKE_CURRENT_SOURCE_DIR})
 file(GLOB TREE_SRC_LIST "tree/*.cpp")
 message("TREE_SRC_LIST "${TREE_SRC_LIST})
 
-file(GLOB MAIN_TREE_TEST "tree_test.cpp")
-message("MAIN_TREE_TEST "${MAIN_TREE_TEST})
+# file(GLOB MAIN_TREE_TEST "tree_test.cpp")
+# message("MAIN_TREE_TEST "${MAIN_TREE_TEST})
 
 file(GLOB SORT_SRC_LIST "sort/*.cpp")
 message("SORT_SRC_LIST "${SORT_SRC_LIST})
@@ -18,14 +18,14 @@ message("SORT_SRC_LIST "${SORT_SRC_LIST})
 file(GLOB MAIN_TEST "test.cpp")
 message("MAIN_TEST "${MAIN_TEST})
 
-file(GLOB TMP "tmp/*.cpp")
-message("TMP "${TMP})
+file(GLOB_RECURSE CODINGINTERVIEWCHINESE2 "codinginterviewchinese2/*.cpp")
+message("CODINGINTERVIEWCHINESE2 "${CODINGINTERVIEWCHINESE2})
 
 
 add_executable(2021_CPP_DEMO main.cpp 
     ${TREE_SRC_LIST} ${MAIN_TREE_TEST} 
     ${SORT_SRC_LIST} ${MAIN_TEST}
-    ${TMP})
+    ${CODINGINTERVIEWCHINESE2})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

@@ -94,3 +94,11 @@ void format(int n){
     data[n] = '\0';
     _format(data, n, 0);
 }
+
+void test_cutting_rope() {
+    int data[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 50, 55};
+    for(int i=0; i<sizeof(data)/sizeof(int); i++)
+        cout << max_product(data[i]) << " " << maxProductAfterCutting_solution1(data[i]) << endl;
+
+    format(2);
+}
