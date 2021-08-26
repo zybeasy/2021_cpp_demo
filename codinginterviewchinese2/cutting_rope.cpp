@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <cstring>
+
 using namespace std;
 /* 长n的绳子剪成m断，m>1, 分段长度乘积最大多少？
 

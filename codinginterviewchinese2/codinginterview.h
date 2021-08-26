@@ -18,4 +18,7 @@ void test_get_kth_to_tail();
 void test_reverse_list();
 void test_merge_sorted_list();
 
+////////// TREE ALGORITHM ////////////
+void tree_is_sub_tree();
+
 #endif

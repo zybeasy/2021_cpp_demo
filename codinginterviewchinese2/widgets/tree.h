@@ -10,24 +10,8 @@ typedef struct BinaryTreeNode {
 
 BTN* create_btn(int value);
 
-BTN* create_tree_by_pre_mid_order(BTN **pre, BTN **mid, int len) {
-    if (!pre || !mid || len <= 0)
-        return NULL;
-    
-    // BTN *root = create_btn(pre[0]->data);
-    BTN *root = pre[0];
+void print_bintree_as_fulltree(BTN *root);
 
-    int index = 0;
-    for (; index<len; ++index) {
-        if (pre[0] == mid[index]) {
-            break;
-        }
-    }
-    if (index == len)
-        throw("FUCK ERROR");
-
-    return root;
-
-}
+BTN* create_tree_by_pre_mid_order(BTN **pre, BTN **mid, int len);
 
 #endif

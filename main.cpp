@@ -25,6 +25,8 @@ int main(int, char**) {
     // test_reverse_list();
     // test_merge_sorted_list();
 
+    tree_is_sub_tree();
+
     const char* FORMAT = "============";
     cout << FORMAT << " END " << FORMAT << endl;
 
