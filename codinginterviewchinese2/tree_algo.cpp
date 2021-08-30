@@ -49,5 +49,4 @@ void tree_is_sub_tree() {
     print_bintree_as_fulltree(root2);
 
     cout << is_sub_tree(root, root2) << endl;
-    
 }

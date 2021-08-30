@@ -21,4 +21,10 @@ void test_merge_sorted_list();
 ////////// TREE ALGORITHM ////////////
 void tree_is_sub_tree();
 
+///////// ARRAY ALGORITHM ////////////
+void test_print_matrix();
+
+///////// STACK ALGORITHM ////////////
+void test_is_pop_order();
+
 #endif
