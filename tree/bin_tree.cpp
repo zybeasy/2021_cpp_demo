@@ -102,6 +102,25 @@ Node* bt_deserialize(int *data, int len) {
     return root;
 }
 
+int IMPOSSIBLE_LABEL = -99999;
+Node* bt_deserialize_recursive(int *data, int len, int *index) {
+    Node *root = NULL;
+    if (!data || len <= 0 || !index || *index >= len)
+        return root;
+
+    if (data[*index] != IMPOSSIBLE_LABEL) {
+        root = _create_node(data[*index]);
+        (*index)++;
+        root->left = bt_deserialize_recursive(data, len, index);
+        root->right = bt_deserialize_recursive(data, len, index);
+    }
+    else {
+        (*index)++;
+    }
+    return root;
+}
+
+
 void bt_bfs(Node* root) {
     if (!root)
         return;

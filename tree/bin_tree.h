@@ -36,6 +36,7 @@ stack<Node*>* bt_find_path(Node* root, int sum);
 Node* bst_to_sorted_deque(Node* root);
 
 Node* bt_deserialize(int *data, int len);
+Node* bt_deserialize_recursive(int *data, int len, int *index);
 
 
 

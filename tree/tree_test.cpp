@@ -138,6 +138,9 @@ void test_bt_deserialize() {
     int IMPOSIBE_LABEL = -99999;
     int data[] = {1, 2, 4, IMPOSIBE_LABEL, IMPOSIBE_LABEL, IMPOSIBE_LABEL, 3, 5, IMPOSIBE_LABEL, IMPOSIBE_LABEL, 6, IMPOSIBE_LABEL, IMPOSIBE_LABEL};
     bt_bfs_as_full_bt(bt_deserialize(data, sizeof(data)/sizeof(int)));
+
+    int index  = 0;
+    bt_bfs_as_full_bt(bt_deserialize_recursive(data, sizeof(data)/sizeof(int), &index));
 }
 
 
