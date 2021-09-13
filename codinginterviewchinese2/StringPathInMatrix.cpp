@@ -61,6 +61,7 @@ bool get_path(char *data, int rows, int cols, char *str) {
         }
     }
 
+    // fail to find path
     output_result(data, rows, cols, visited);
     cout << "FILED TO FIND PATH \"" << "\033[32m" << str << "\033[0m\"" << endl;
     return false;

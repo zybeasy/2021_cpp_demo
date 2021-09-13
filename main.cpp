@@ -6,6 +6,8 @@
 #include "tree/tree_test.h"
 #include "test.h"
 
+#include "sort/sort_test.h"
+
 #include "codinginterviewchinese2/codinginterview.h"
 
 using namespace std;
@@ -19,6 +21,7 @@ int main(int, char**) {
     // test_bt_print_in_zigzag();
 
     // test_quick_sort();
+    test_quick_sort2();
     // test_get_path();
     // test_cutting_rope();
 
@@ -37,7 +40,10 @@ int main(int, char**) {
 
     // test_bst_to_sorted_deque();
 
-    test_bt_deserialize();
+    // test_bt_deserialize();
+
+    // test_str_permutation();
+    // test_str_combination();
 
     const char* FORMAT = "============";
     cout << FORMAT << " END " << FORMAT << endl;

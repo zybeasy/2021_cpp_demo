@@ -13,6 +13,7 @@
         "string": "cpp",
         "string_view": "cpp",
         "vector": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "new": "cpp"
     }
 }

@@ -27,4 +27,9 @@ void test_print_matrix();
 ///////// STACK ALGORITHM ////////////
 void test_is_pop_order();
 
+
+///////// STRING ALGORITHM //////////
+void test_str_permutation();
+void test_str_combination();
+
 #endif
