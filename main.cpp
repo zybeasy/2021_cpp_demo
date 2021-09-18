@@ -4,7 +4,10 @@
 #include <sys/syscall.h>
 
 #include "tree/tree_test.h"
+#include "tree/heap.h"
 #include "test.h"
+
+#include "dynamic_program/dp.h"
 
 #include "sort/sort_test.h"
 
@@ -20,8 +23,10 @@ int main(int, char**) {
     // test_bt_bfs();
     // test_bt_print_in_zigzag();
 
+    // test_build_max_heap();
+
     // test_quick_sort();
-    test_quick_sort2();
+    // test_quick_sort2();
     // test_get_path();
     // test_cutting_rope();
 
@@ -44,6 +49,11 @@ int main(int, char**) {
 
     // test_str_permutation();
     // test_str_combination();
+
+    // test_get_greatest_sum_of_subarray();
+    // test_get_maxsum_two_dimensional_arrays();
+
+    test_longest_substring_without_duplication();
 
     const char* FORMAT = "============";
     cout << FORMAT << " END " << FORMAT << endl;

@@ -46,6 +46,6 @@ void quick_sort2(int *data, int begin, int end) {
         data[j] = tmp;
         data[begin] = t;
         quick_sort2(data, begin, j-1);
-        quick_sort2(data, i, end);
+        quick_sort2(data, i, end); 
     }
 }
