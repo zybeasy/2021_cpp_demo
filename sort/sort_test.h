@@ -6,4 +6,6 @@
 void test_quick_sort();
 void test_quick_sort2();
 
+void test_merge_sort();
+
 #endif

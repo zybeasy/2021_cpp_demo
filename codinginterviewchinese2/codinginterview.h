@@ -32,4 +32,9 @@ void test_is_pop_order();
 void test_str_permutation();
 void test_str_combination();
 
+//////// MISC ///////////////////////
+void test_get_ugly_number();
+void test_get_missing_number();
+void test_get_value_sameas_index();
+
 #endif

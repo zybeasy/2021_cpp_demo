@@ -29,6 +29,7 @@ int main(int, char**) {
     // test_quick_sort2();
     // test_get_path();
     // test_cutting_rope();
+    test_merge_sort();
 
     // test_delete_duplication();
     // test_get_kth_to_tail();
@@ -53,7 +54,9 @@ int main(int, char**) {
     // test_get_greatest_sum_of_subarray();
     // test_get_maxsum_two_dimensional_arrays();
 
-    test_longest_substring_without_duplication();
+    // test_longest_substring_without_duplication();
+    // test_get_missing_number();
+    test_get_value_sameas_index();
 
     const char* FORMAT = "============";
     cout << FORMAT << " END " << FORMAT << endl;
