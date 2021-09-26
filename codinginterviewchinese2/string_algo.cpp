@@ -68,3 +68,52 @@ void test_str_combination() {
     char data1[] = "abcd";
     str_combination(data1, 2);
 }
+
+
+void reverse(char *str, int begin, int end) {
+    while(begin < end) {
+        char tmp = str[begin];
+        str[begin] = str[end];
+        str[end] = tmp;
+        begin++;
+        end--;
+    }
+}
+
+/* 反转字符串中的单词
+ * "I am a student." 翻转为 "student. a am I".
+ */
+void reverse_sentence(char *str) {
+    if (!str)
+        return;
+
+    reverse(str, 0, strlen(str)-1);
+    int begin = 0;
+    int end = begin;
+    while(begin < strlen(str)) {
+        while(str[begin] == ' ' && begin < strlen(str))
+            begin++;
+        end = begin;
+        while(str[end] != ' ' && str[end] != '\0')
+            end++;
+        reverse(str, begin, end-1);
+        begin = end;
+    }
+    cout << "\"" << str << "\"" << endl;
+}
+
+void test_reverse_sentence() {
+    char str1[] = "I am a student.";
+    reverse_sentence(str1);
+
+    char str2[] = "Wonderful";
+    reverse_sentence(str2);
+
+    reverse_sentence(NULL);
+
+    char str3[] = "";
+    reverse_sentence(str3);
+
+    char str4[] = "   ";
+    reverse_sentence(str4);
+}

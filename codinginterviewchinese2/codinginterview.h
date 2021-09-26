@@ -31,6 +31,7 @@ void test_is_pop_order();
 ///////// STRING ALGORITHM //////////
 void test_str_permutation();
 void test_str_combination();
+void test_reverse_sentence();
 
 //////// MISC ///////////////////////
 void test_get_ugly_number();
