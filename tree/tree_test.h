@@ -18,5 +18,7 @@ void test_bst_to_sorted_deque();
 
 void test_bt_deserialize();
 
+void test_bt_find_node_path();
+
 
 #endif

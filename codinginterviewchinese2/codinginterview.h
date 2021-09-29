@@ -37,5 +37,7 @@ void test_reverse_sentence();
 void test_get_ugly_number();
 void test_get_missing_number();
 void test_get_value_sameas_index();
+void test_queen_with_max();
+void test_max_in_windows();
 
 #endif

@@ -337,5 +337,92 @@ Node* bst_to_sorted_deque(Node *root) {
     return root;
 }
 
+// 二叉树是否存在到指定某个节点的路径
+bool bt_find_node_path(Node *root, int value) {
+    if (!root)
+        return false;
+    
+    stack<Node*> s;
+    s.push(root);
 
+    bool result = false;
+    Node *top = NULL;
+    Node *top_parent = NULL;
+    while(!s.empty()) {
+        top = s.top();
+        if (top->data == value) {
+             result = true;
+             break;
+        }
+        else {
+            if (top->left)
+                s.push(top->left);
+            else if (top->right)
+                s.push(top->right);
+            else {
+                s.pop();
+                if (s.size()) {
+                    top_parent = s.top();
+                    while(top_parent->right == top || top_parent->right == NULL) {
+                        top = top_parent;
+                        s.pop();
+                        if (s.size())
+                            top_parent = s.top();
+                        else {
+                            result = false;
+                            break;
+                        }
+                    }
+                    if (top_parent->right)
+                        s.push(top_parent->right);
+                }
+                else {
+                    result = false;
+                }
+            }
+        }
+    }
+
+    while (s.size()) {
+        cout << s.top()->data << " ";
+        s.pop();
+    }
+    cout << endl;
+    return result;
+}
+
+bool _bt_find_node_path_recursive(Node *node, int value, stack<Node*>& s) {
+    s.push(node);
+
+    if (node->data == value)
+        return true;
+    
+    if (node->left) {
+        if (_bt_find_node_path_recursive(node->left, value, s))
+            return true;
+    }
+
+    if (node->right) {
+        if (_bt_find_node_path_recursive(node->right, value, s))
+            return true;
+    }
+    s.pop();
+    return false;
+}
+
+bool bt_find_node_path_recursive(Node *root, int value) {
+    bool result = false;
+    if (!root)
+        return result;
+
+    stack<Node*> s;
+    result = _bt_find_node_path_recursive(root, value, s);
+
+    while(s.size()) {
+        cout << s.top()->data << " ";
+        s.pop();
+    }
+    cout << endl;
+    return result;
+}
 

@@ -50,7 +50,10 @@ int main(int, char**) {
 
     // test_str_permutation();
     // test_str_combination();
-    test_reverse_sentence();
+    // test_reverse_sentence();
+    // test_queen_with_max();
+    // test_max_in_windows();
+    test_bt_find_node_path();
 
     // test_get_greatest_sum_of_subarray();
     // test_get_maxsum_two_dimensional_arrays();

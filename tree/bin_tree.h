@@ -38,6 +38,9 @@ Node* bst_to_sorted_deque(Node* root);
 Node* bt_deserialize(int *data, int len);
 Node* bt_deserialize_recursive(int *data, int len, int *index);
 
+// 二叉树中是否存在某个节点
+bool bt_find_node_path(Node *root, int value);
+bool bt_find_node_path_recursive(Node *root, int value);
 
 
 

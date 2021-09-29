@@ -143,4 +143,38 @@ void test_bt_deserialize() {
     bt_bfs_as_full_bt(bt_deserialize_recursive(data, sizeof(data)/sizeof(int), &index));
 }
 
+void test_bt_find_node_path() {
+    int pre1[] = {10, 6, 4, 8, 14, 12, 16};
+    int mid1[] = {4, 6, 8, 10, 12, 14, 16};
+    Node *root = createBinTreeByPreAndMidOrder(pre1, mid1, 7);
+    // bt_bfs_as_full_bt(root);
+    cout << bt_find_node_path(root, 12) << endl;
+    cout << bt_find_node_path_recursive(root, 12) << endl;
+    cout << "===========================" << endl;
+
+    int pre2[] = {5, 4, 3, 2, 1};
+    int mid2[] = {1, 2, 3, 4, 5};
+    root = createBinTreeByPreAndMidOrder(pre2, mid2, 5);
+    // bt_bfs_as_full_bt(root);
+    cout << bt_find_node_path(root, 1) << endl;
+    cout << bt_find_node_path_recursive(root, 1) << endl;
+    cout << "===========================" << endl;
+
+    int pre3[] = {1, 2, 3, 4, 5};
+    int mid3[] = {1, 2, 3, 4, 5};
+    root = createBinTreeByPreAndMidOrder(pre3, mid3, 5);
+    // bt_bfs_as_full_bt(root);
+    cout << bt_find_node_path(root, 3) << endl;
+    cout << bt_find_node_path_recursive(root, 3) << endl;
+    cout << "===========================" << endl;
+
+    int pre4[] = {1};
+    int mid4[] = {1};
+    root = createBinTreeByPreAndMidOrder(pre4, mid4, 1);
+    // bt_bfs_as_full_bt(root);
+    cout << bt_find_node_path(root, 1) << endl;
+    cout << bt_find_node_path_recursive(root, 1) << endl;
+    cout << "===========================" << endl;
+}
+
 
